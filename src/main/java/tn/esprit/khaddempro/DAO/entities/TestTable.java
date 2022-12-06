@@ -20,30 +20,17 @@ import java.util.Set;
 @EqualsAndHashCode
 
 @Entity
-@Table(name="Etudiant")
-public class Etudiant implements Serializable {
+@Table(name="TestTable")
+public class TestTable implements Serializable {
 	@Id
 	@GeneratedValue (strategy = GenerationType.AUTO)
-	@Column(name="idEtudiant")
-	private Integer idEtudiant;
+	
+	private Integer idtest;
 	private String prenomE;
 	private String nomE;
-	
-	@Enumerated(EnumType.STRING) 
-	private Option options ;
-	
 	@Temporal(TemporalType.DATE)
 	@Column(name="datenaissance")
 	private  Date date_naissance; 
-	
-	@OneToMany(mappedBy = "etudiant")
-	@JsonIgnore
-	private Set<Contrat> contrat; 
 
-	@ManyToMany(cascade=CascadeType.PERSIST)
-     private List<Equipe> equipe;
-	
-	@ManyToOne
-	private Departement departement ; 
 	
 }
