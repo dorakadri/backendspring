@@ -26,7 +26,7 @@ import tn.esprit.khaddempro.services.interfaces.ProjetService;
 
 @RestController
 @RequestMapping("")
-@CrossOrigin(origins = "http://localhost:4200",exposedHeaders = {"Content-Disposition","Access-Control-Allow-Credentials"})
+@CrossOrigin(origins = "*",exposedHeaders = {"Content-Disposition","Access-Control-Allow-Credentials"})
 
 public class ProjetController {
 	@Autowired

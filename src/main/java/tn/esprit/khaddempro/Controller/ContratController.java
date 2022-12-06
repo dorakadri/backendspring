@@ -22,7 +22,7 @@ import tn.esprit.khaddempro.DAO.entities.Contrat;
 import tn.esprit.khaddempro.services.interfaces.ContratService;
 
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RequestMapping("/ContratApi")
 @RestController
 public class ContratController {

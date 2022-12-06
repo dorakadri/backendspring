@@ -18,7 +18,7 @@ import tn.esprit.khaddempro.DAO.entities.Departement;
 import tn.esprit.khaddempro.DAO.entities.Universite;
 import tn.esprit.khaddempro.services.interfaces.UniversiteService;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("UniversityController")
 public class UniversityController {

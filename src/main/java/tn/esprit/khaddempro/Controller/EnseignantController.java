@@ -19,7 +19,7 @@ import tn.esprit.khaddempro.services.interfaces.EnseignantService;
 
 @RestController
 @RequestMapping("/controllerEnseignant")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class EnseignantController {
 	
 	  @Autowired
