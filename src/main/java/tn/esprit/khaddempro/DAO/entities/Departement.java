@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -17,12 +18,13 @@ import javax.persistence.Table;
 public class Departement implements Serializable{
 	    @Id
 	    @GeneratedValue (strategy = GenerationType.IDENTITY)
-	    @Column(name="idDepartement")
-	    private Integer idDepart; // Clé primaire
+	    @Column(name="idDepart")
+	    private Integer idDepart; 
 	    private String nomDepart; 
 	    private String adresse; 
 	      
 	     @OneToMany(mappedBy = "departement" ,cascade = CascadeType.ALL)
+	   
 	     private Set<Etudiant> etudiants ; 
 	     
 	     @OneToMany(mappedBy = "departement" ,cascade = CascadeType.ALL)
