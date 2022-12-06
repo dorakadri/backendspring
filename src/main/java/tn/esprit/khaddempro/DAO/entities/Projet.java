@@ -19,6 +19,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.hibernate.annotations.ForeignKey;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -39,7 +41,8 @@ public class Projet implements Serializable {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column(name="idProjet")
     private Integer idProjet;
-    @Column(unique = true)
+  
+
     private String nomProjet;
     private String client ;
     private String decription;

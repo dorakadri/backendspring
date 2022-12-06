@@ -24,6 +24,7 @@ public class Departement implements Serializable{
 	      
 	     @OneToMany(mappedBy = "departement" ,cascade = CascadeType.ALL)
 	     private Set<Etudiant> etudiants ; 
+	     
 	     @OneToMany(mappedBy = "departement" ,cascade = CascadeType.ALL)
 	     private Set<Enseignant> Enseignants ;
 	     
