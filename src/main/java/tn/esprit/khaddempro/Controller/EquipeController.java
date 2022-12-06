@@ -24,7 +24,7 @@ import tn.esprit.khaddempro.services.interfaces.EquipeService;
 
 @RestController
 @RequestMapping("/EquipeController")
-@CrossOrigin(origins = "*")
+@CrossOrigin
 public class EquipeController {
 	
 	 @Autowired 

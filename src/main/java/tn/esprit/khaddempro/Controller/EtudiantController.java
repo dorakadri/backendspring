@@ -11,7 +11,7 @@ import tn.esprit.khaddempro.services.interfaces.EquipeService;
 import tn.esprit.khaddempro.services.interfaces.EtudiantService;
 
 import java.util.List;
-@CrossOrigin("*")
+@CrossOrigin
 @RestController
 @RequestMapping("/controllerEtudiant")
 

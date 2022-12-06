@@ -22,7 +22,7 @@ import tn.esprit.khaddempro.services.interfaces.DepartmentService;
 
 @RestController
 @RequestMapping("DepartmentController")
-@CrossOrigin(origins = "*")
+@CrossOrigin
 public class DepartmentController {
 
 	@Autowired
