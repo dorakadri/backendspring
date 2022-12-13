@@ -29,7 +29,7 @@ public class Etudiant implements Serializable {
 	private String prenomE;
 	private String nomE;
 	
-	@Enumerated(EnumType.STRING) 
+	@Enumerated(EnumType.STRING)
 	private Option options ;
 	
 	@Temporal(TemporalType.DATE)
