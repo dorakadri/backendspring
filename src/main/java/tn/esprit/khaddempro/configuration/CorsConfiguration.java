@@ -18,7 +18,7 @@ public class CorsConfiguration {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("https://dorakadri.github.io/frontendkaddem/**")
+                registry.addMapping("/**").allowedHeaders("*")
                         .allowedMethods(GET, POST, PUT, DELETE)
                         .allowedHeaders("*")
                         .allowedOriginPatterns("*")
