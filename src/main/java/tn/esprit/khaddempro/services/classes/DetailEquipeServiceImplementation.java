@@ -13,7 +13,7 @@ import tn.esprit.khaddempro.services.interfaces.DetailEquipeService;
 @Service
 public class DetailEquipeServiceImplementation implements DetailEquipeService{
 
-	@Autowired
+	    @Autowired
 	    DetailEquipe_repo detailEquipeRepository;
 
 	    public List<DetailEquipe> getDetailEquipes(){
